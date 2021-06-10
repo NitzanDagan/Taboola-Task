@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+       // SENDING THE PARAMETERS TO THE FUNCTION IN ORDER TO INVOKE API
+       // THIS WAY YOU CAN ADD MORE TYPES OF RECOMMENDATION IN THE FUTURE
+       // AND USE THE SAME WIDGET FOR DIFFERENT PUBLISHERS  
+        (function() {
+            initializeRecommendations('desktop', 'f9040ab1b9c802857aa783c469d0e0ff7e7366e4', 6, '???', 'video');      
+        })();
+
+        //TEST FUNCTION IN NOTE BECAUSE I CALLED ONLY IF I HAVE SOMETHING TO CHECK, OTHERWISE SHOW ERROR. 
+
+        //testOrganicTemplate('balh', 'google.com', 'Nitzan', 'Dagan');
+       
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <button onclick="document.getElementById('my_widget').style.display='none';" id="close">Hide This Ad</button>                    
+        <div id="my_widget" class="widget_container">  
+            <h1>Recommended for you</h1>             
+        </div>
+    </div>        
+</body>
